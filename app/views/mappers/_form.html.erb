@@ -1,0 +1,5 @@
+<%= simple_form_for @mapper, remote: true do |f|   %>
+  <%= f.input  :string1, as: :text %>
+  <%= f.input  :string2, as: :text %>
+  <%= f.button :submit %>
+<% end %>

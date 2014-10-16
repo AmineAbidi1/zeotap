@@ -1,0 +1,18 @@
+<li class="list-group-item list-group-item-info">
+  <%= mapper.string1 %>
+
+  <span class="deadline"><%= mapper.string2 %></span>
+  <span class="deadline" style="font-size:20px;"><strong><%= mapper.result %></strong></span>
+
+  <span class="edit">
+    <%= link_to edit_mapper_path(mapper), remote: true do %>
+      <button class="btn btn-primary btn-xs">Edit</button>
+    <% end %>
+
+    
+    <%= link_to mapper, remote: true, method: :delete,
+        data: { confirm: 'Are you sure?' } do %>
+      <button class="btn btn-danger btn-xs">Delete!</button>
+    <% end %>
+  </span>
+</li>
