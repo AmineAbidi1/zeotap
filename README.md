@@ -6,8 +6,12 @@ A dynamic single-page application that computes the characters found in two stri
 
 ## Usage
 
-bundle install
-rake db:create
-rake db:migrate
-rails server
-localhost:3000 
+* **run** bundle install
+
+* **run** rake db:create
+ 
+* **run** rake db:migrate
+
+* **run** rails server
+
+* **run** localhost:3000 
